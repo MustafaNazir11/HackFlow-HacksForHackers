@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>HackFlow</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <h1>🚀 HackFlow</h1>
+  <p>Turn hackathon ideas into realistic MVPs.</p>
+
+  <!-- STEP 1: INPUT -->
+  <section>
+    <h2>1️⃣ Start a Hack</h2>
+    <input id="idea" placeholder="Project idea" />
+    <input id="stack" placeholder="Tech stack (e.g. JS, Node, AI)" />
+    <input id="hours" type="number" placeholder="Hours left" />
+    <input id="team" type="number" placeholder="Team size" />
+    <button onclick="generateMVP()">Generate MVP</button>
+  </section>
+
+  <!-- STEP 2: MVP OUTPUT -->
+  <section>
+    <h2>2️⃣ MVP Plan</h2>
+    <pre id="mvpOutput">Waiting for input...</pre>
+    <button onclick="generateTasks()">Generate Tasks</button>
+  </section>
+
+  <!-- STEP 3: TASKS -->
+  <section>
+    <h2>3️⃣ Task Breakdown</h2>
+    <pre id="taskOutput">No tasks yet.</pre>
+    <button onclick="generateDemo()">Generate Demo Script</button>
+  </section>
+
+  <!-- STEP 4: DEMO SCRIPT -->
+  <section>
+    <h2>4️⃣ Demo Script</h2>
+    <pre id="demoOutput">Not generated yet.</pre>
+  </section>
+
+  <script src="app.js"></script>
+</body>
+</html>

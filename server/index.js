@@ -1,10 +1,10 @@
+import dotenv from "dotenv";
+dotenv.config();
+
 import express from "express";
 import cors from "cors";
-import dotenv from "dotenv";
 import { callGroq, listModels } from "./groq.js";
 import { mvpPrompt, taskPrompt, demoPrompt } from "./prompts.js";
-
-dotenv.config();
 const app = express();
 
 app.use(cors());
